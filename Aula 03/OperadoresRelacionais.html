@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Simbolos dos operadores relacionais
+
+            && - e - Tem por função verificar duas condições, porém apenas
+            executa se ambas forem verdadeiras (true)
+
+            || - ou - Tem por função verificar duas condições, e excuta se
+             no mínimo uma das condiçoes for verdadeiras.
+
+        */
+        //exemplo E
+        var temCarteira = false;
+        var idade = 14;
+        var docEmDia = true;
+
+        if (idade >= 18 && temCarteira && docEmDia) {
+            alert("Pode direigir tudo OK")
+        } else {
+            alert("Verifique os requisitos para dirigir");
+        }
+
+        //Exemplo ou
+
+        if (idade < 18 || idade > 65) {
+            alert("Voto não obrigatorio")
+        } else {
+            alert("Voto obrigatorio")
+        }
+
+
+    </script>
+</body>
+
+</html>
