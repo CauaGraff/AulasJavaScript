@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função de Retorno 2</title>
+</head>
+
+<body>
+    <script>
+        function media(n1, n2, n3, n4) {
+            var media = (n1 + n2 + n3 + n4) / 4
+            if (media >= 7) {
+                return "aprovado media foi " + media;
+            } else {
+                return "reprovado media foi " + media;
+            }
+        }
+
+        document.write(media(4.5, 6.9, 8.9, 0.5))
+    </script>
+</body>
+
+</html>

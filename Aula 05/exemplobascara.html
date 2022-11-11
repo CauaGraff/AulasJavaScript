@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Bascara</title>
+</head>
+
+<body>
+    <script>
+        function delta(a, b, c) {
+            return (b * b) - 4 * a * c;
+        }
+
+        function bhaskara(a, b, c) {
+
+            var x1 = (-b + Math.sqrt(delta(a, b, c))) / (2 * a);
+            var x2 = (-b - Math.sqrt(delta(a, b, c))) / (2 * a);
+
+            document.write("x' = " + x1 + "<br>");
+            document.write("x'' = " + x2 + "<br>");
+        }
+
+
+        bhaskara(1, -7, 5);
+    </script>
+</body>
+
+</html>
